@@ -22,10 +22,13 @@
   </head>
 
   <body>
+
+    <!-- #region header  -->
     <header class="page-header">
-      <div class="container header-container">
+      <div class="header-container container">
         <nav class="header-nav">
-          <a class="header-logo" href="./index.html">Web<span class="logo-part">Studio</span></a>
+          <a class="header-logo" href="./index.html">
+            Web<span class="logo-part">Studio</span></a>
           <ul class="nav-list">
             <li class="nav-item"><a class="nav-link current" href="./index.html">Studio</a></li>
             <li class="nav-item"><a class="nav-link" href="">Portfolio</a></li>
@@ -35,27 +38,36 @@
         <address class="contacts">
           <ul class="contacts-list">
             <li class="contacts-item">
-              <a href="mailto:info@devstudio.com" class="contacts-link"
-                >info@devstudio.com</a
-              >
+             <a class="contacts-link email-link" href="mailto:info@devstudio.com">
+              info@devstudio.com</a>
             </li>
             <li class="contacts-item">
-              <a href="tel:+110001111111" class="contacts-link"
-                >+11 (000) 111-11-11</a
-              >
+              <a  class="contacts-link tel-link href="tel:+110001111111" class="contacts-link"
+                >+11 (000) 111-11-11</a>
             </li>
           </ul>
         </address>
+        <button class="mobile-menu-btn" type="button" aria-label="mobile-menu-btn">
+            <svg class="mobile-menu-icon" width="24" height="24">
+              <use href="./images/icons.svg#menu"></use>
+            </svg>
+          </button>
       </div>
     </header>
+     <!-- #endregion -->
 
     <main class="page-main">
+
+       <!-- #region 1 hero-section -->
       <section class="hero-section section">
         <div class="container">
           <h1 class="main-title">Effective Solutions for Your Business</h1>
         <button type="button" class="hero-button">Order Service</button>
         </div>
       </section>
+       <!-- #endregion  -->
+
+      <!-- #region 2 section-features -->
       <section class="features-section section">
       <div class="container">
         <h2 class="features-title visually-hidden">section2</h2>
@@ -111,13 +123,17 @@
         </ul>
       </div>
       </section>
-      <section class="team-section section">
+      <!-- #endregion -->
+
+      <!-- #region 3 section-team -->
+      <section class="team-section section ">        
         <div class="container">
           <h2 class="team-section-title">Our Team</h2>
         <ul class="team-list">
           <li class="team-card">
             <img
               src="./images/team/mark_guerrero.jpg"
+              srcset="./images/team/mark_guerrero.jpg 1x, ./images/team/mark.querrero@2x.jpg 2x"
               alt="Mark Guerrero"
               width="264"
               height="260"
@@ -161,6 +177,7 @@
           <li class="team-card">
             <img
               src="./images/team/tom_ford.jpg"
+              srcset="/images/team/tom_ford.jpg 1x, ./images/team/tom.ford@2x.jpg 2x"
               alt="Tom Ford"
               width="264"
               height="260"
@@ -204,6 +221,7 @@
           <li class="team-card">
             <img
               src="./images/team/camila_garci.jpg"
+              srcset="./images/team/camila_garci.jpg 1x, ./images/team/camila.garcia@2x.jpg 2x"
               alt="Camila Garcia"
               width="264"
               height="260"
@@ -247,6 +265,7 @@
           <li class="team-card">
             <img
               src="./images/team/daniel_wilson.jpg"
+              srcset="./images/team/daniel_wilson.jpg 1x, /images/team/daniel.wilson@2x.jpg 2x"
               alt="Daniel Wilson"
               width="264"
               height="260"
@@ -292,7 +311,10 @@
         </div>
         
       </section>
-      <section class="portfolio-section section">
+      <!-- #endregion -->
+
+       <!-- #region 4 section-potrfolio -->
+      <section class="portfolio-section section hide">
         <div class="container">
           <h2 class="portfolio-section-title">Our Portfolio</h2>
         <ul class="portfolio-list">
@@ -408,9 +430,12 @@
         </div>
         
       </section>
+      <!-- #endregion -->
+
     </main>
 
-    <footer class="page-footer">
+    <!-- #region footer  -->
+    <footer class="page-footer hide">
       <div class="container footer-container ">
         <div class="footer-left">
         <a class="logo footer-logo" href="./index.html"
@@ -469,8 +494,10 @@
       </form>
     </div>
   </div>
-</footer>
+    </footer>
+<!-- #endregion -->
 
+<!-- #region backdrop -->
     <div class="backdrop modal-hidden">
       <div class="modal">
       <button class="modal-close-btn" type="button">
@@ -534,9 +561,78 @@
 </form>
 </div>
   </div>
+  <!-- #endregion -->
   
+  <!-- #region backdrop mobile-menu -->
+   <div class="mobile-menu">
+    <button class="mobile-menu-btn clear-btn" type="button">
+        <svg class="mobile-menu-icon" width="8" height="8">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+    </button>
+    <ul class="mobile-menu-nav">
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link active" href="#">Studio</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link" href="#">Portfolio</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link" href="#">Contacts</a>
+        </li>
+      </ul>
+
+    <ul class="mobile-menu-contacts contacts">
+     <li class="contacts-item">
+    <a class="contacts-link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+     </li>
+     <li class="contacts-item">
+      <a class="contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+     </li>
+    </ul>
+
+  <ul class="mobile-menu-socials socials">
+    <li class="socials-item">
+      <a 
+      class="socials-link"
+            href="https://instagram.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Link to Instagram">
+      <svg width="24" height="24"><use href="./images/icons.svg#icon-instagram"></use></svg>
+    </a>
+  </li>
+    <li class="socials-item">
+      <a 
+       class="socials-link"
+            href="https://twitter.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Link to Twitter (X)">
+      <svg width="24" height="24"><use href="./images/icons.svg#icon-twitter"></use></svg>
+    </a>
+  </li>
+    <li class="socials-item">
+      <a  class="socials-link"
+            href="https://facebook.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Link to Facebook">
+      <svg width="24" height="24"><use href="./images/icons.svg#icon-facebook"></use></svg>
+    </a>
+  </li>
+    <li class="socials-item">
+      <a  class="socials-link"
+            href="https://Linkedin.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Link to Linkedin">
+      <svg width="24" height="24"><use href="./images/icons.svg#icon-linkedin"></use></svg>
+    </a>
+  </li>
+  </ul>
+   </div>
+    <!-- #endregion -->
   </body>
-
-
 
 </html>
