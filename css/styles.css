@@ -703,6 +703,12 @@ display: none;
   padding: 96px 0;
   color: #f4f4fd;
 }
+@media only screen and (min-width: 1158px) {
+.page-footer{
+  padding: 100px 0;
+} 
+}
+
 
 .footer-container {
   display: flex;
@@ -715,7 +721,7 @@ display: none;
 @media only screen and (min-width: 768px) {
   .footer-container {
     align-items: baseline;
-   justify-content: center;
+   justify-content: flex-start;
     flex-direction: row;
     text-align: left;
     flex-wrap: wrap;
@@ -857,7 +863,7 @@ color: #f4f4fd;
 }
 
 .footer-btn {
-   display: inline-flex;
+   display:flex;
   align-items: center;
   justify-content: center;
   gap: 16px;
@@ -872,6 +878,7 @@ color: #f4f4fd;
   line-height: 1.5;
   letter-spacing: 0.04em;
   transition: background-color 250ms cubic-bezier(0.4,0,0.2,1);
+  margin: 0 auto;
 }
 
 .footer-btn:hover,
