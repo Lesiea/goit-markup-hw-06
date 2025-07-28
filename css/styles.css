@@ -877,12 +877,7 @@ color: #f4f4fd;
               visibility 250ms cubic-bezier(0.4,0,0.2,1);
 }
 
-.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-}
-.backdrop:not(.is-hidden) {
+.backdrop.is-open {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
@@ -893,9 +888,10 @@ color: #f4f4fd;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  min-height: 623px;
   width: 288px;
   background-color: #fcfcfc;
-  padding: 72px 24px 24px;
+  padding: 72px 16px 16px;
   border-radius: 4px;
   box-shadow: 0 1px 1px rgba(0,0,0,0.14), 
               0 1px 3px rgba(0,0,0,0.12),
@@ -905,6 +901,8 @@ color: #f4f4fd;
 @media only screen and (min-width: 768px) {
   .modal  {
     width: 408px;
+    min-height: 584px;
+    padding: 72px 24px 24px;
   }
 }
 .modal-close-btn {
@@ -1003,6 +1001,7 @@ color: #f4f4fd;
   display: flex;
   align-items: center;
   gap: 8px;
+   flex-wrap: wrap;
 }
 
 .modal-custom-checkbox {
