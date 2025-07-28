@@ -715,9 +715,9 @@ display: none;
 @media only screen and (min-width: 768px) {
   .footer-container {
     align-items: baseline;
-    justify-content: flex-start;
+   justify-content: center;
     flex-direction: row;
-    text-align: start;
+    text-align: left;
     flex-wrap: wrap;
     row-gap: 72px;
     column-gap: 24px;
